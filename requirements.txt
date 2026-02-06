@@ -1,0 +1,23 @@
+PyQt5
+matplotlib
+pandas
+schedule
+```
+
+Run: `pip install -r requirements.txt`
+
+### **Step 2: Restructure Your Code**
+
+I'll help you create a new architecture:
+```
+Wifi-Stats/
+├── main.py (new - tray app entry point)
+├── speedTest.py (keep existing)
+├── logger.py (enhance this)
+├── gui/
+│   ├── tray_app.py (system tray logic)
+│   ├── visualization.py (charts/graphs)
+│   └── settings_dialog.py (config window)
+├── ookla-speedtest-1.2.0-win64/
+├── logs/
+└── requirements.txt

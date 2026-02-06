@@ -9,13 +9,26 @@ def welcome():
     os.system("color B")
     os.system("title Speedtest - by Tony Akinniranye")
     
-    # time.sleep(1.5)
-    print("************************************************************")
-    print("                     Network Speed Test\n")
-    print("Developed by Tony Akinniranye ")
-    print("************************************************************")
-    # time.sleep(1.5)
+    print("""
+          
+ __    __  ____  _____  ____        _____ ______   ____  ______  _____
+|  |__|  ||    ||     ||    |      / ___/|      | /    ||      |/ ___/
+|  |  |  | |  | |   __| |  | _____(   \_ |      ||  o  ||      (   \_ 
+|  |  |  | |  | |  |_   |  ||     |\__  ||_|  |_||     ||_|  |_|\__  |
+|  `  '  | |  | |   _]  |  ||_____|/  \ |  |  |  |  _  |  |  |  /  \ |
+ \      /  |  | |  |    |  |       \    |  |  |  |  |  |  |  |  \    |
+  \_/\_/  |____||__|   |____|       \___|  |__|  |__|__|  |__|   \___|
+                                                                      
+    """)
+    time.sleep(1)
+    print("Network Performance Scanner & Analyzer")
+    time.sleep(0.2)
+    print("Version 0.2 - Alpha")
+    time.sleep(0.2)
+    print("Developed by Tony Akinniranye")
+    time.sleep(0.4)
     mainMenu()
+
 
     return
     
