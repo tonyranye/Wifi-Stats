@@ -36,9 +36,9 @@ def welcome():
 def mainMenu():
     print("\nWhat Would You Like To Do?\n")
     print("1. Begin Speed test")
-    print("2. Begin automatic speed test tracker")
-    print("3. View internet details")
-    print("0. EXIT ")
+    # print("2. Begin automatic speed test tracker")
+    # print("3. View internet details")
+    print("*. EXIT ")
 
     menuChoice = int(input("\nENTER CHOICE HERE: "))
     
