@@ -1,3 +1,5 @@
+import time
+
 import subprocess
 import json
 
@@ -20,7 +22,7 @@ def speedTest():
     
     now = datetime.now()
     date = now.strftime("%Y-%m-%d") # ex 2024-02-03
-    time = now.strftime("%H:%M:%S") # ex 14:35:22
+    time_hr = now.strftime("%H:%M:%S") # ex 14:35:22
     isp = data['isp']
     public_ip = data['interface']['externalIp']
     
@@ -44,7 +46,7 @@ def speedTest():
     print(f'| LOCAL IP: ***********')
     print(f"| SERVER LOCATION: {server_location}")
     print(f'| DATE {date}')
-    print(f"| TIME {time}\n|")
+    print(f"| TIME {time_hr}\n|")
     
     print("| ")
     print(f"| PING: {ping_ms:.2f} MS")
@@ -57,7 +59,21 @@ def speedTest():
     print(" -------------------------------------------------------------------------------")
 
     
-    log_to_csv(date, time, isp, public_ip, local_ip, ping_ms, download_speed, upload_speed, server_location, jitter_ms)
-
+    log_to_csv(date, time_hr, isp, public_ip, local_ip, ping_ms, download_speed, upload_speed, server_location, jitter_ms)
     
     
+    loop = True
+    while loop:
+      end = (input("\nPerform Another test? (Y/n): ")) 
+      if end == "y" or end == "Y":
+         speedTest()
+         loop = False
+         
+      elif end == "n" or end == "N":
+         print("exiting...")
+         loop = False
+         return
+      else:
+         print("invalid entry, try again")
+         time.sleep(0.8)
+         continue

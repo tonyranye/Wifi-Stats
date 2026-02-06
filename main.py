@@ -23,13 +23,11 @@ def welcome():
     time.sleep(1)
     print("Network Performance Scanner & Analyzer")
     time.sleep(0.2)
-    print("Version 0.2 - Alpha")
+    print("Version 0.1 - Alpha")
     time.sleep(0.2)
-    print("Developed by Tony Akinniranye")
+    print("Developed by tonyranye")
     time.sleep(0.4)
     mainMenu()
-
-
     return
     
     
