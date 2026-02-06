@@ -6,6 +6,16 @@ A Windows system tray application that monitors your network performance, perfor
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
+
+
+## Screenshots
+<img width="764" height="389" alt="image" src="https://github.com/user-attachments/assets/1bb49fe9-8903-4ecb-9513-34315c417f31" />
+<br> <br>
+<img width="761" height="446" alt="image" src="https://github.com/user-attachments/assets/4e10bc6b-fff1-420c-bf31-72a80de5a04e" />
+
+
+
+
 ## Features
 
 ### 🚀 Current Features (v0.1)
