@@ -1,9 +1,9 @@
 import time
 import os 
 
-from speedTest import *
-from logger import *
-
+from speedTest import speedTest
+from schedular import prompt_interval
+from visualizer import visualize
 
 def welcome():
     os.system("color B")
@@ -34,18 +34,24 @@ def welcome():
 def mainMenu():
     print("\nWhat Would You Like To Do?\n")
     print("1. Begin Speed test")
-    # print("2. Begin automatic speed test tracker")
-    # print("3. View internet details")
-    print("*. EXIT ")
+    print("2. Begin automatic speed test tracker\n")
+    print("3. View stats and visualizations")
+    print("0. EXIT ")
 
     menuChoice = int(input("\nENTER CHOICE HERE: "))
     
     if menuChoice == 1:
         speedTest()
+        mainMenu()
         
     if menuChoice == 2:
-        # createNewTracker()
-        pass
+        prompt_interval()
+        
+    if menuChoice == 3:
+        visualize()
+        
+        
+        
     if menuChoice == 0:
         print("EXITING...")
         

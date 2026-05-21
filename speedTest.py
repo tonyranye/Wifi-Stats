@@ -7,7 +7,7 @@ import json
 from logger import log_to_csv
 from datetime import datetime
 
-def speedTest():
+def speedTest(auto=False):
     
     print("\nBEGINING SPEED TEST...")
     
@@ -62,18 +62,20 @@ def speedTest():
     log_to_csv(date, time_hr, isp, public_ip, local_ip, ping_ms, download_speed, upload_speed, server_location, jitter_ms)
     
     
+    if auto:
+        return
+    
     loop = True
     while loop:
-      end = (input("\nPerform Another test? (Y/n): ")) 
-      if end == "y" or end == "Y":
-         speedTest()
-         loop = False
-         
-      elif end == "n" or end == "N":
-         print("exiting...")
-         loop = False
-         return
-      else:
-         print("invalid entry, try again")
-         time.sleep(0.8)
-         continue
+        end = input("\nPerform Another test? (Y/n): ")
+        if end == "y" or end == "Y":
+            speedTest()
+            loop = False
+        elif end == "n" or end == "N":
+            print("exiting...")
+            loop = False
+            return
+        else:
+            print("invalid entry, try again")
+            time.sleep(0.8)
+            continue
