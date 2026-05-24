@@ -97,14 +97,14 @@ Date,Time,ISP,Public IP,Local IP,Ping (ms),Download (Mbps),Upload (Mbps),Server 
 - [ ] Add tray notifications for test completion
 
 ### Phase 2: Automated Scanning 🔄
-- [ ] Background thread for periodic scanning
-- [ ] Configurable scan intervals (hourly, daily, custom)
+- [x] Background thread for periodic scanning
+- [x] Configurable scan intervals (hourly, daily, custom)
 - [ ] Start/Stop controls from tray menu
 
 ### Phase 3: Data Visualization 📊
-- [ ] Speed over time line charts
+- [x] Speed over time line charts
 - [ ] ISP comparison bar charts
-- [ ] Peak/average/minimum statistics
+- [x] Peak/average/minimum statistics
 - [ ] Exportable reports
 
 ### Phase 4: Advanced Features 🎯
@@ -126,7 +126,9 @@ Wifi-Stats/
 ├── main.py                          # Entry point (console version)
 ├── speedTest.py                     # Speed test logic using Ookla CLI
 ├── logger.py                        # CSV logging functionality
-├── ookla-speedtest-1.2.0-win64/    # Speedtest CLI executable
+├── schedular.py                     # Scheduling speed tests using APSchedular
+├── visualization.py                 # Graphing using matplotlib
+├── ookla-speedtest-1.2.0-win64/     # Speedtest CLI executable
 │   └── speedtest.exe
 ├── logs/                            # Generated speed test logs
 │   └── speedtest_log.csv
@@ -190,7 +192,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - **Ookla Speedtest**: For providing the CLI tool for accurate speed measurements
-- Developed by **Tony Akinniranye**
+- Developed by **tonyranye**
 
 ## Contact
 
