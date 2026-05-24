@@ -9,10 +9,14 @@ A Windows system tray application that monitors your network performance, perfor
 
 
 ## Screenshots
-<img width="764" height="389" alt="image" src="https://github.com/user-attachments/assets/1bb49fe9-8903-4ecb-9513-34315c417f31" />
+<img width="525" height="361" alt="image" src="https://github.com/user-attachments/assets/14fae398-6c43-4e10-b75f-7986c868a296" />
 <br> <br>
 <img width="761" height="446" alt="image" src="https://github.com/user-attachments/assets/4e10bc6b-fff1-420c-bf31-72a80de5a04e" />
 <br><br>
+<img width="399" height="207" alt="image" src="https://github.com/user-attachments/assets/c30561f3-c317-4185-a06a-70d69a8d9253" />
+<br><br>
+<img width="1189" height="883" alt="image" src="https://github.com/user-attachments/assets/ebc521f2-c37c-48c3-a39a-bf5c889a44be" />
+
 
 
 
