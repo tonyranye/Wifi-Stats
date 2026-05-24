@@ -12,6 +12,8 @@ A Windows system tray application that monitors your network performance, perfor
 <img width="764" height="389" alt="image" src="https://github.com/user-attachments/assets/1bb49fe9-8903-4ecb-9513-34315c417f31" />
 <br> <br>
 <img width="761" height="446" alt="image" src="https://github.com/user-attachments/assets/4e10bc6b-fff1-420c-bf31-72a80de5a04e" />
+<br><br>
+
 
 
 
@@ -22,15 +24,16 @@ A Windows system tray application that monitors your network performance, perfor
 - **On-Demand Speed Testing**: Run network speed tests instantly from the command line
 - **Automated Data Logging**: All test results saved to CSV with timestamps
 - **ISP Tracking**: Records your Internet Service Provider information
+- **Automatic Periodic Scanning**: Schedule speed tests at custom intervals
 - **Detailed Metrics**: Captures ping, download speed, upload speed, and public IP
+- **Data Visualization**: Interactive charts showing network performance over time
+- **Historical Analysis**: Track trends and identify peak/low performance periods
+
 
 ### 🔮 Planned Features (System Tray Version)
 - **Windows System Tray Integration**: Run silently in the background
-- **Automatic Periodic Scanning**: Schedule speed tests at custom intervals
-- **Data Visualization**: Interactive charts showing network performance over time
 - **Multi-Location Support**: Compare performance across different service providers
 - **Performance Alerts**: Notifications when speeds drop below thresholds
-- **Historical Analysis**: Track trends and identify peak/low performance periods
 
 ## Installation
 
